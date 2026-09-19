@@ -2,6 +2,10 @@
 
 Die Schaltung des **RM KL 200/P (Rel. 5.04)** ist ein klassischer, sehr einfach gehaltener Breitband-HF-Verstärker für das 10m/11m-Band (26–30 MHz) in C-Klasse bzw. ungeregeltem AB-Betrieb.
 
+## Warum "Mystery Box"?
+
+Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikation anzupassen, dass bei einem Kauf dessen Inhalt so lange ein Mysterium bleibt bis er zum ersten mal geöffnet wird.
+
 ### Schaltungsanalyse & Warum der KL 200/P ab Werk oft unsauber klingt
 
 1. **Gleichstrom-Ruhestrom / Bias-Netzwerk:**
