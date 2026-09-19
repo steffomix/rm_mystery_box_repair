@@ -22,12 +22,9 @@ Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikatio
 * Der HF-Empfangsvorverstärker nutzt Tr6 (BF199). Austausch der gealterten Entkopplungskondensatoren (C25, C26, C28) sorgt für ein deutlich rauschärmeres Signal.
 
 
-
 ---
 
-### Überarbeitete Bauteilliste
-
-In der folgenden Tabelle sind die Bauteile gemäß deiner hochgeladenen Stückliste aufgeführt. Die Links führen direkt zu den passenden Produktkategorien/Bauteilen bei **Reichelt** und **Mouser**.
+### Liste aller Bauteile
 
 | Bauteil | SOLL: Bauteil (Typ / Optimierung) | IST Bauteil | Neupreis €| Link | ... |
 | --- | --- | --- | --- | --- | --- |
@@ -50,9 +47,9 @@ In der folgenden Tabelle sind die Bauteile gemäß deiner hochgeladenen Stückli
 | **C28** | 56 pF / 50V C0G/NP0 Keramik | Kerko NP0 56J (56pF) | 0,50 |  [DigiKey C28](https://www.digikey.de/de/products/detail/murata-electronics/RCE5C1H560J0A2H03B/4277662) |  |
 | **C29** | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF) | 0,50 |  [DigiKey C29](https://www.digikey.de/de/products/detail/panasonic-industry/ECQ-E2104JB/2595602) | |
 | **C30** | 100 µF / 25V (35V Low-ESR Elko) | OK | 0,25 |  [DigiKey C30](https://www.digikey.de/de/products/detail/kemet/ESY107M025AE3AA/2712544) | |
-| **C31** | 470 nF / 100V MKT-Folienkondensator | OK: AV .47 J 100 (470nF) | 0,80 | [DigiKey C31](https://www.digikey.de/de/products/detail/kemet/R60EF3470506AJ/10063837) |  |
+| **C31** | 470 nF / 100V MKT-Folienkondensator | OK | 0,80 | [DigiKey C31](https://www.digikey.de/de/products/detail/kemet/R60EF3470506AJ/10063837) |  |
 | **R8** | 4,7 kΩ / 0,25W Metallschicht 1% | OK | 0,08 |  [Reichelt R8](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--p236963.html) |  |
-| **R9** | 15 Ω / 2W Impulsfester Draht/Metalloxid | 0 Ohm Drahtbrücke | 0,25|  [Reichelt R9](https://www.reichelt.de/drahtwiderstand-axial-3w-15-ohm-5--p277672.html) |  |
+| **R9** | 15 Ω / 2W Impulsfester Draht/Metalloxid | Fehlt! (0 Ohm Drahtbrücke) | 0,25|  [Reichelt R9](https://www.reichelt.de/drahtwiderstand-axial-3w-15-ohm-5--p277672.html) |  |
 | **R11** | 10 Ω / 0,5W Metallschicht 1% | OK | 0,05 | [Reichelt R11](https://www.reichelt.de/duennschichtwiderstand-axial-0-6-w-10-ohm-1--p233671.html) |  |
 | **R12** | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Reichelt R12](https://www.reichelt.de/widerstand-metallschicht-1-0-kohm-axial-0-4-w-1--p237127.html) | |
 | **R13** | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 1,30 |[Reichelt R13](https://www.reichelt.de/widerstand-metallschicht-2-2-kohm-axial-0-4-w-1--p237119.html) |  |
@@ -69,8 +66,8 @@ In der folgenden Tabelle sind die Bauteile gemäß deiner hochgeladenen Stückli
 | **D14** | 1N4007 (Bias-Diode thermisch gekoppelt) | Ok (ohne Kühlung)| 0,02 |  [Reichelt D14](https://www.reichelt.de/1n4007-p1726.html) | |
 | **TR1** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [DigiKey TR1](https://www.digikey.de/de/products/detail/diotec-semiconductor/BC547B/13164496) |  |
 | **TR4** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [DigiKey TR4](https://www.digikey.de/de/products/detail/diotec-semiconductor/BC547B/13164496) | |
-| **TR5** | MRF455 (Endstufe) | OK |  60-120€ | - | Nur noch Gebraucht |
-| **TR6** | BF199 (MPSH10 Ersatz) | OK | 0,250  |  [Reichelt TR6](https://www.reichelt.de/de/de/shop/produkt/hf-bipolartransistor_npn_25v_0_1a_1w_to-92-5433) | |
+| **TR5** | MRF455 Endstufe Signalausgang | OK |  66€ | - | Original MRF455 nur noch Gebraucht erhältlich |
+| **TR6** | BF199 Vorstufe Signaleingang (MPSH10 Ersatz) | OK | 0,250  |  [Reichelt TR6](https://www.reichelt.de/de/de/shop/produkt/hf-bipolartransistor_npn_25v_0_1a_1w_to-92-5433) | Original BF199 nur noch gebraucht erhältlich|
 
 ---
 
