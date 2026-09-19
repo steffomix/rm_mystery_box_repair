@@ -126,7 +126,7 @@ Auf dem Foto der Platine sitzt D14 unten rechts am Rand. Achte beim Einbau darau
 
 ## Platine Aufbau
 
-![Platine Aufbau](./images/platine-aufbau_v5.01.png)
+![Platine Aufbau](images/platine-aufbau_v5.01.png)
 
 ## Schaltung
 
