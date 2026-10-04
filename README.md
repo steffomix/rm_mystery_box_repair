@@ -64,8 +64,7 @@ Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikatio
 | **D11** | 1N5400 (3A Power Diode / Schutz) | OK | 1,00 |  [Reichelt](https://www.reichelt.de/de/de/shop/produkt/gleichrichterdiode_45_v_10_a_do-201-217019) |  |
 | **D12-13** | 1N4007 (1A Standard Rectifier Diode) | OK | 0,02 |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
 | **D14** | 1N4007 (Bias-Diode thermisch gekoppelt) | Ok (ohne Kühlung)| 0,02 |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
-| **TR1** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [DigiKey](https://www.digikey.de/de/products/detail/diotec-semiconductor/BC547B/13164496) |  |
-| **TR4** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [DigiKey](https://www.digikey.de/de/products/detail/diotec-semiconductor/BC547B/13164496) | |
+| **TR1 + TR4** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [Conrad (Ersatz BC547B)](https://www.conrad.de/de/p/diotec-transistor-bjt-diskret-bc547a-to-92-anzahl-kanaele-1-npn-154709.html) | |
 | **TR5** | MRF455 Endstufe Signalausgang | OK |  66€ | - | - |
 | **TR6** | BF199 Vorstufe Signaleingang (MPSH10 Ersatz oder 2N5109 (Overkill Ersatz)) | OK |  |   | **0,90** | [box73.de](https://www.box73.de/product_info.php?products_id=673) |
 
