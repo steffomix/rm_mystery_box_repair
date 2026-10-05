@@ -6,6 +6,19 @@ Die Schaltung des **RM KL 200/P (Rel. 5.04)** ist ein klassischer, sehr einfach 
 
 Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikation anzupassen, dass bei einem Kauf dessen Inhalt so lange ein Mysterium bleibt bis er zum ersten mal geöffnet wird.
 
+#### Inhalt
+[Schaltung Analyse](#schaltungsanalyse--warum-der-kl-200p-ab-werk-oft-unsauber-klingt)
+[Bauteilliste](#liste-aller-bauteile)
+[Kondensator Kapazität](#kondensator-kapazität)
+[Kondensator Genauigkeit](#kondensator-genauigkeit)
+[Widerstand Farbcodes](#wiederstand-farbcodes)
+[Platine Foto](#platine)
+[Platine Aufbau](#platine-aufbau)
+[Schaltung](#schaltung)
+
+
+
+
 ### Schaltungsanalyse & Warum der KL 200/P ab Werk oft unsauber klingt
 
 1. **Gleichstrom-Ruhestrom / Bias-Netzwerk:**
@@ -48,18 +61,18 @@ Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikatio
 | _C29_ | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF) | 0,50 |  [DigiKey](https://www.digikey.de/de/products/detail/panasonic-industry/ECQ-E2104JB/2595602) |  |  |
 | **C30** | 100 µF / 25V (35V Low-ESR Elko) | OK | 0,25 |  [DigiKey](https://www.digikey.de/de/products/detail/kemet/ESY107M025AE3AA/2712544) | 0,32 | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/elko_radial_100_f_35v_105_c_low_esr_aec-q200-376211) |
 | **C31** | 470 nF / 100V MKT-Folienkondensator | OK | 0,80 | [DigiKey](https://www.digikey.de/de/products/detail/kemet/R60EF3470506AJ/10063837) | 0,65 | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/folienkondensator_470_nf_250_v_rm_10_105_c_5_-228862) |
-| **R8** | 4,7 kΩ / 0,25W Metallschicht 1% | OK | 0,08 |  [Reichelt](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--p236963.html) | 0,10 | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/widerstand_metallschicht_4_70_kohm_0207_0_6_w_1_-11784) | 
+| **R8** | 4,7 kΩ / 0,25W Metallschicht 1% | OK | 0,08 |  [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-4k7-mf0207fte52-4k7-metallschicht-widerstand-4-7-k-axial-bedrahtet-0207-0-6-w-1-1-st-tape-3523708.html) | 
 | **R9** | 15 Ω / 2W Impulsfester Draht/Metalloxid | Fehlt! (0 Ohm Drahtbrücke) | 0,25|  [Reichelt](https://www.reichelt.de/drahtwiderstand-axial-3w-15-ohm-5--p277672.html) | **0,23** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/drahtwiderstand_axial_3w_15_ohm_5_-277672) |
-| **R11** | 10 Ω / 0,5W Metallschicht 1% | OK | 0,05 | [Reichelt](https://www.reichelt.de/duennschichtwiderstand-axial-0-6-w-10-ohm-1--p233671.html) |  |
-| **R12** | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-1-0-kohm-axial-0-4-w-1--p237127.html) | |
-| **R13** | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 1,30 |[Reichelt](https://www.reichelt.de/widerstand-metallschicht-2-2-kohm-axial-0-4-w-1--p237119.html) |  |
-| **R14** | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-100-ohm-axial-0-4-w-1--p237128.html) |  |
-| **R15** | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-12-0-kohm-0207-0-6-w-1--p11482.html) | |
-| **R16** | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-100-ohm-axial-0-4-w-1--p237128.html) | |
-| **R17** | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-12-0-kohm-0207-0-6-w-1--p11482.html) | |
-| **R18** | 10 kΩ / 0,25W Metallschicht 1% | OK | 0,38 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-10-kohm-axial-0-4-w-1--p237126.html) | |
-| **R19** | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 0,02| [Reichelt](https://www.reichelt.de/widerstand-metallschicht-2-2-kohm-axial-0-4-w-1--p237119.html) |  |
-| **R20** | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-1-0-kohm-axial-0-4-w-1--p237127.html) |  |
+| **R11** | 10 Ω / 0,5W Metallschicht 1% | OK | 0,05 | [Conrad](https://www.conrad.de/de/p/vishay-wk202070a1009j2200-metallschicht-widerstand-10-axial-bedrahtet-0207-1-w-5-1-st-tape-3026174.html) |  |
+| **R12 + R20** | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Conrad](https://www.conrad.de/de/p/vishay-mbb02070c1001fct00-metallschicht-widerstand-1-k-axial-bedrahtet-0-60-w-1-50-ppm-c-1-st-tape-3026152.html) | |
+| **R13 + R19** | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 1,30 |[Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-2k2-mf0207fte52-2k2-metallschicht-widerstand-2-2-k-0207-0-6-w-1-1-st-3523705.html) |  |
+| **R14 + R16** | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-100r-mf0207fte52-100r-metallschicht-widerstand-100-0207-0-6-w-1-1-st-3523693.html) |  |
+| **R15 + R17** | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-12k-mf0207fte52-12k-metallschicht-widerstand-12-k-0207-0-6-w-1-1-st-3523712.html) | |
+| _R16_ | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-100-ohm-axial-0-4-w-1--p237128.html) | |
+| _R17_ | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-12-0-kohm-0207-0-6-w-1--p11482.html) | |
+| **R18** | 10 kΩ / 0,25W Metallschicht 1% | OK | 0,38 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-10k-mf0207fte52-10k-metallschicht-widerstand-10-k-0207-0-6-w-1-1-st-tape-3523711.html) | |
+| _R19_ | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 0,02| [Reichelt](https://www.reichelt.de/widerstand-metallschicht-2-2-kohm-axial-0-4-w-1--p237119.html) |  |
+| _R20_ | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-1-0-kohm-axial-0-4-w-1--p237127.html) |  |
 | **D6-10** | 1N4148 (Fast Switching Diode DO-35) | OK | 0,02 | [Reichelt](https://www.reichelt.de/1n4148-do-35-p1730.html) |  |
 | **D11** | 1N5400 (3A Power Diode / Schutz) | OK | 1,00 |  [Reichelt](https://www.reichelt.de/de/de/shop/produkt/gleichrichterdiode_45_v_10_a_do-201-217019) |  |
 | **D12-13** | 1N4007 (1A Standard Rectifier Diode) | OK | 0,02 |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
@@ -81,7 +94,7 @@ Auf dem Foto der Platine sitzt D14 unten rechts am Rand. Achte beim Einbau darau
 ---
 
 
-**Kondensator Kapazität**
+### Kondensator Kapazität
 
 | Code | Rechnung | Kapazität in pF | Entspricht in nF / µF |
 |-----|-----|-----|-----|
@@ -102,7 +115,7 @@ Auf dem Foto der Platine sitzt D14 unten rechts am Rand. Achte beim Einbau darau
 | 2473 |  47 × 10³ | 47.000 pF | 47 nF |
 | 2474 |  47 × 10⁴ | 470.000 pF | 470 nF (0,47 µF) |
 
-**Kondensator Genauigkeit**
+### Kondensator Genauigkeit
 
 | Buchstabe | Genauigkeit |
 | --- | --- |
@@ -115,6 +128,7 @@ Auf dem Foto der Platine sitzt D14 unten rechts am Rand. Achte beim Einbau darau
 | M: | ± 20 % |
 | Z: | -20% bis +80% |
 
+### Wiederstand Farbcodes
 ![** Widerstände Farbcodes **](./images/resistor-color-codes.png)
 [Image source](https://de.wikipedia.org/wiki/Datei:Farbcode_von_Widerst%C3%A4nden.svg)
 
