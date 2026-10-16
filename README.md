@@ -39,46 +39,46 @@ Der RM KL 200 wurde im laufe der Zeit so oft verändert ohne dessen Spezifikatio
 
 ### Liste aller Bauteile
 
-| Bauteil | SOLL: Bauteil (Typ / Optimierung) | IST Bauteil | Neupreis_1 | Link_1 | Neupreis_2 | Link_2 |
-| --- | --- | --- | --- | --- | --- | --- |
-| **C9** | 8,2 pF / 50V C0G/NP0 Keramik | OK | 0,80 |  | |
-| **C11** | 4,7 µF / 16V (63V Low-ESR Elko) | OK | 1,50 |  | |
-| **C12** | 47 µF / 16V (25V Low-ESR Elko) | OK | 0,20 | |  |
-| **C13 + C29** | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF)| 0,90 |   | **2x 0,26** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/folienkondensator_100_nf_630_v_rm_15_105_c_5_-228871) |
-| **C14** | 10 nF / 50V C0G/X7R Keramik | Kerko 103Z (10nF) | 0,95 |  | **0,51** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-kerko_10nf_100v_125_c-393651) |
-| **C15** | 100 pF / 50V C0G/NP0 Keramik | Kerko 101J (100pF) | 1,85 |  | **0,07**| [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-keramikkondensator_100p_5_-13504) |
-| **C16 + C19** | 220 pF / 500V Silver Mica (statt N750) | Kerko NP0 221J (220pF) | 4,40 |   | **2x 4,50** |  [box73.de](https://www.box73.de/product_info.php?products_id=3270) |
-| **C17 + C20** | 270 pF / 500V Silver Mica (statt N750) | Kerko SL 271J (270pF) | 4,40 |  | **2x 4,20** | [box72.de](https://www.box73.de/product_info.php?products_id=3271) |
-| **C18 +  C21** | 120 pF / 500V Silver Mica (High Q) | Kerko NP0 121J (120pF) | 3,15 |   | **2x 2,90**  | [box72.de](https://www.box73.de/product_info.php?products_id=3267) |
-| _C19_ | 220 pF / 500V Silver Mica (Kollektor) | Kerko NP0 221J (220pF) | 5,20 | | - | Wie C16 |
-| _C20_ | 270 pF / 500V Silver Mica (Filter) | Kerko SL 271J (270pF) | 4,40 |  | - |  Wie C17 |
-| _C21_ | 120 pF / 500V Silver Mica (Filter) | Kerko NP0 121J (120pF) | 3,15 |   | - | Wie C18 |
-| **C23** | 1,0 nF / 500V Keramik (Hochspannung) | Kerko B 102K (1nF) | 0,75 |   |  **0,03** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/keramik-kondensator_500v_1_0n-9308) |
-| **C25** | 150 pF / 50V C0G/NP0 Keramik | Kerko NP0 151J (150pF) | 0,25 |  | **0,06** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-kerko_150_pf_50_100_v_npo_5_rm_2_5-13497) |
-| **C26** | 470 pF / 500V Silver Mica (Vorstufe) | Kerko SL 471J (470pF) | 4,15€ | | **3,60 + 4,20** | 470pF nicht gefunden [box72.de 180pF](https://www.box73.de/product_info.php?products_id=3269) **+** [270pF - **wie C17** ](https://www.box73.de/product_info.php?products_id=3271)|
-| **C27** | 10 nF / 50V Keramik | Kerko 103Z (10nF) | 0,65 |   | **0,08** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/keramik-kondensator_10n-9267) |
-| **C28** | 56 pF / 50V C0G/NP0 Keramik | Kerko NP0 56J (56pF) | 0,50 |   | **1,39** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/glimmer-kondensator_56pf_100v_-_2_-42426) |
-| _C29_ | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF) | 0,50 |   |  |  |
-| **C30** | 100 µF / 25V (35V Low-ESR Elko) | OK | 0,25 |   | 0,32 | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/elko_radial_100_f_35v_105_c_low_esr_aec-q200-376211) |
-| **C31** | 470 nF / 100V MKT-Folienkondensator | OK | 0,80 |  | 0,65 | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/folienkondensator_470_nf_250_v_rm_10_105_c_5_-228862) |
-| **R8** | 4,7 kΩ / 0,25W Metallschicht 1% | OK | 0,08 |  [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-4k7-mf0207fte52-4k7-metallschicht-widerstand-4-7-k-axial-bedrahtet-0207-0-6-w-1-1-st-tape-3523708.html) | 
-| **R9** | 15 Ω / 2W Impulsfester Draht/Metalloxid | Fehlt! (0 Ohm Drahtbrücke) | 0,25|  [Reichelt](https://www.reichelt.de/drahtwiderstand-axial-3w-15-ohm-5--p277672.html) | **0,23** | [reichelt.de](https://www.reichelt.de/de/de/shop/produkt/drahtwiderstand_axial_3w_15_ohm_5_-277672) |
-| **R11** | 10 Ω / 0,5W Metallschicht 1% | OK | 0,05 | [Conrad](https://www.conrad.de/de/p/vishay-wk202070a1009j2200-metallschicht-widerstand-10-axial-bedrahtet-0207-1-w-5-1-st-tape-3026174.html) |  |
-| **R12 + R20** | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Conrad](https://www.conrad.de/de/p/vishay-mbb02070c1001fct00-metallschicht-widerstand-1-k-axial-bedrahtet-0-60-w-1-50-ppm-c-1-st-tape-3026152.html) | |
-| **R13 + R19** | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 1,30 |[Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-2k2-mf0207fte52-2k2-metallschicht-widerstand-2-2-k-0207-0-6-w-1-1-st-3523705.html) |  |
-| **R14 + R16** | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-100r-mf0207fte52-100r-metallschicht-widerstand-100-0207-0-6-w-1-1-st-3523693.html) |  |
-| **R15 + R17** | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-12k-mf0207fte52-12k-metallschicht-widerstand-12-k-0207-0-6-w-1-1-st-3523712.html) | |
-| _R16_ | 100 Ω / 0,25W Metallschicht 1% | OK | 0,70 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-100-ohm-axial-0-4-w-1--p237128.html) | |
-| _R17_ | 12 kΩ / 0,25W Metallschicht 1% | OK | 0,07 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-12-0-kohm-0207-0-6-w-1--p11482.html) | |
-| **R18** | 10 kΩ / 0,25W Metallschicht 1% | OK | 0,38 | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-10k-mf0207fte52-10k-metallschicht-widerstand-10-k-0207-0-6-w-1-1-st-tape-3523711.html) | |
-| _R19_ | 2,2 kΩ / 0,25W Metallschicht 1% | OK | 0,02| [Reichelt](https://www.reichelt.de/widerstand-metallschicht-2-2-kohm-axial-0-4-w-1--p237119.html) |  |
-| _R20_ | 1,0 kΩ / 0,25W Metallschicht 1% | OK | 0,60 | [Reichelt](https://www.reichelt.de/widerstand-metallschicht-1-0-kohm-axial-0-4-w-1--p237127.html) |  |
-| **D6-10** | 1N4148 (Fast Switching Diode DO-35) | OK | 0,02 | [Reichelt](https://www.reichelt.de/1n4148-do-35-p1730.html) |  |
-| **D11** | 1N5400 (3A Power Diode / Schutz) | OK | 1,00 |  [Reichelt](https://www.reichelt.de/de/de/shop/produkt/gleichrichterdiode_45_v_10_a_do-201-217019) |  |
-| **D12-13** | 1N4007 (1A Standard Rectifier Diode) | OK | 0,02 |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
-| **D14** | 1N4007 (Bias-Diode thermisch gekoppelt) | Ok (ohne Kühlung)| 0,02 |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
-| **TR1 + TR4** | BC547B (NPN Universal TO-92) | OK | 0,12 |  [Conrad](https://www.conrad.de/de/p/diotec-transistor-bjt-diskret-bc547a-to-92-anzahl-kanaele-1-npn-154709.html) | |
-| **TR5** | MRF455 (60W) oder SD1446 (90W) Endstufe  | OK |  66€ | - | - |
+| Bauteil ID | SOLL: Bauteil | IST Bauteil | Link_1  | Link_2 |
+| --- | --- | --- | --- | --- |
+| **C9** | 8,2 pF / 50V C0G/NP0 Keramik | OK | | |
+| **C11** | 4,7 µF / 16V (63V Low-ESR Elko) | OK | | |
+| **C12** | 47 µF / 16V (25V Low-ESR Elko) | OK  | | |
+| **C13 + C29** | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/folienkondensator_100_nf_630_v_rm_15_105_c_5_-228871) |
+| **C14** | 10 nF / 50V C0G/X7R Keramik | Kerko 103Z (10nF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-kerko_10nf_100v_125_c-393651) |
+| **C15** | 100 pF / 50V C0G/NP0 Keramik | Kerko 101J (100pF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-keramikkondensator_100p_5_-13504) |
+| **C16 + C19** | 220 pF / 500V **Silver Mica** (statt N750) | Kerko NP0 221J (220pF) | |  [box73.de](https://www.box73.de/product_info.php?products_id=3270) |
+| **C17 + C20** | 270 pF / 500V **Silver Mica** (statt N750) | Kerko SL 271J (270pF) | | [box72.de](https://www.box73.de/product_info.php?products_id=3271) |
+| **C18 +  C21** | 120 pF / 500V **Silver Mica** (High Q) | Kerko NP0 121J (120pF) | | [box72.de](https://www.box73.de/product_info.php?products_id=3267) |
+| _C19_ | 220 pF / 500V Silver Mica (Kollektor) | Kerko NP0 221J (220pF) | Wie C16 |
+| _C20_ | 270 pF / 500V Silver Mica (Filter) | Kerko SL 271J (270pF) |  Wie C17 |
+| _C21_ | 120 pF / 500V Silver Mica (Filter) | Kerko NP0 121J (120pF) |  Wie C18 |
+| **C23** | 1,0 nF / 500V Keramik (Hochspannung) | Kerko B 102K (1nF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/keramik-kondensator_500v_1_0n-9308) |
+| **C25** | 150 pF / 50V C0G/NP0 Keramik | Kerko NP0 151J (150pF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/vielschicht-kerko_150_pf_50_100_v_npo_5_rm_2_5-13497) |
+| **C26** | 470 pF / 500V **Silver Mica** (Vorstufe) | Kerko SL 471J (470pF) | [Conrad.de (von Suntan)](https://www.conrad.de/de/p/suntan-ts23002h471j3b000r-keramik-kondensator-470-pf-500-v-5-l-x-b-6-mm-x-12-mm-1-st-piece-3014352.html) | |
+| **C27** | 10 nF / 50V Keramik | Kerko 103Z (10nF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/keramik-kondensator_10n-9267) |
+| **C28** | 56 pF / 50V C0G/NP0 Keramik | Kerko NP0 56J (56pF) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/glimmer-kondensator_56pf_100v_-_2_-42426) |
+| _C29_ | 100 nF / 50V MKT-Folienkondensator | Kerko 104Z (100nF) | Wie C13  |  
+| **C30** | 100 µF / 25V (35V Low-ESR Elko) | OK | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/elko_radial_100_f_35v_105_c_low_esr_aec-q200-376211) |
+| **C31** | 470 nF / 100V MKT-Folienkondensator | OK || [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/folienkondensator_470_nf_250_v_rm_10_105_c_5_-228862) |
+| **R8** | 4,7 kΩ / 0,25W Metallschicht 1% | OK  |  [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-4k7-mf0207fte52-4k7-metallschicht-widerstand-4-7-k-axial-bedrahtet-0207-0-6-w-1-1-st-tape-3523708.html) | 
+| **R9** | 15 Ω / 2W Impulsfester Draht/Metalloxid | Fehlt! (0 Ohm Drahtbrücke) | | [Reichelt](https://www.reichelt.de/drahtwiderstand-axial-3w-15-ohm-5--p277672.html) | | [Reichelt.de](https://www.reichelt.de/de/de/shop/produkt/drahtwiderstand_axial_3w_15_ohm_5_-277672) |
+| **R11** | 10 Ω / 0,5W Metallschicht 1% | OK | [Conrad](https://www.conrad.de/de/p/vishay-wk202070a1009j2200-metallschicht-widerstand-10-axial-bedrahtet-0207-1-w-5-1-st-tape-3026174.html) |  |
+| **R12 + R20** | 1,0 kΩ / 0,25W Metallschicht 1% | OK  | [Conrad](https://www.conrad.de/de/p/vishay-mbb02070c1001fct00-metallschicht-widerstand-1-k-axial-bedrahtet-0-60-w-1-50-ppm-c-1-st-tape-3026152.html) | |
+| **R13 + R19** | 2,2 kΩ / 0,25W Metallschicht 1% | OK |[Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-2k2-mf0207fte52-2k2-metallschicht-widerstand-2-2-k-0207-0-6-w-1-1-st-3523705.html) |  |
+| **R14 + R16** | 100 Ω / 0,25W Metallschicht 1% | OK | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-100r-mf0207fte52-100r-metallschicht-widerstand-100-0207-0-6-w-1-1-st-3523693.html) |  |
+| **R15 + R17** | 12 kΩ / 0,25W Metallschicht 1% | OK | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-12k-mf0207fte52-12k-metallschicht-widerstand-12-k-0207-0-6-w-1-1-st-3523712.html) | |
+| _R16_ | 100 Ω / 0,25W Metallschicht 1% | OK | Wie R14 | |
+| _R17_ | 12 kΩ / 0,25W Metallschicht 1% | OK | Wie R15 | |
+| **R18** | 10 kΩ / 0,25W Metallschicht 1% | OK | [Conrad](https://www.conrad.de/de/p/yageo-mf0207fte52-10k-mf0207fte52-10k-metallschicht-widerstand-10-k-0207-0-6-w-1-1-st-tape-3523711.html) | |
+| _R19_ | 2,2 kΩ / 0,25W Metallschicht 1% | OK | Wie R13 | |
+| _R20_ | 1,0 kΩ / 0,25W Metallschicht 1% | OK | Wie R12 | |
+| **D6-10** | 1N4148 (Fast Switching Diode DO-35) | OK | | [Reichelt](https://www.reichelt.de/1n4148-do-35-p1730.html) |  |
+| **D11** | 1N5400 (3A Power Diode / Schutz) | OK | |  [Reichelt](https://www.reichelt.de/de/de/shop/produkt/gleichrichterdiode_45_v_10_a_do-201-217019) |  |
+| **D12-13** | 1N4007 (1A Standard Rectifier Diode) | OK |  |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
+| **D14** | 1N4007 (Bias-Diode thermisch gekoppelt) | Ok (ohne Kühlung)| |  [Reichelt](https://www.reichelt.de/1n4007-p1726.html) | |
+| **TR1 + TR4** | BC547B (NPN Universal TO-92) | OK | [Conrad](https://www.conrad.de/de/p/diotec-transistor-bjt-diskret-bc547a-to-92-anzahl-kanaele-1-npn-154709.html) | |
+| **TR5** | MRF455 (60W) oder SD1446 (90W) Endstufe  | OK |  | - | - |
 | **TR6** | BF199 Vorstufe Signaleingang (MPSH10 Ersatz oder 2N5109 (Overkill Ersatz)) | OK |  |   | **0,90** | [box73.de](https://www.box73.de/product_info.php?products_id=673) |
 
 ---
