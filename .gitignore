@@ -1,3 +1,20 @@
 /history
 
-/analyse
+# run results (2+ GB size)
+/analyse/run/
+
+# gperf
+/analyse/gp/
+
+#python
+/analyse/__pycache__/
+/analyse/pylib/
+
+# local environment
+/analyse/inst/
+
+# usimmics for wine
+/analyse/usim/
+
+# wine
+wine.log

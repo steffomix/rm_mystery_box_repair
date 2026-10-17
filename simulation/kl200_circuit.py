@@ -12,7 +12,19 @@ Transistor- und Relaismodelle) sind als ANNAHME markiert und stehen zentral in P
 # --------------------------------------------------------------------------
 # Parameter (Annahmen stehen als Kommentar dabei)
 # --------------------------------------------------------------------------
+import re
+
+# Optimierte Bauteilwerte ("Nachher"), Begruendung siehe analyse-bericht.md
+OPTIMIERT = {
+    "R9": "15 Ohm",           # Drahtbruecke -> 15 Ohm laut Bauteilliste
+    "L2": "70 nH",            # Ziel-Induktivitaet (vorher Annahme 85 nH)
+    "L5": "60 nH",            # Ziel-Induktivitaet (vorher Annahme 80 nH)
+    "OV": {"C18": "470 pF", "R14": "330 Ohm", "C26": "2.2 nF"},
+}
+
 PARAM = {
+    "OV": {},                 # Analyse: Bauteilwerte ueberschreiben
+    "SCALE": {},              # Analyse: Bauteilwerte skalieren (Toleranz/Temperatur)
     "Vbat": "13.8 V",
     "Fuse_R": "10 mOhm",      # ANNAHME: 12 A Schmelzsicherung, Kaltwiderstand
     "Rcoil": "360 Ohm",       # ANNAHME: Finder 30.22 12 V, ~0.4 W Spule
@@ -26,6 +38,7 @@ PARAM = {
     "L3": "3 uH",             # ANNAHME: VK200 Ferritdrossel
     "L4": "0.35 uH",
     "L5": "80 nH",
+    "Le5": "3 nH",           # ANNAHME: Emitter-Zuleitung/Bonddraht Tr5; ohne (0) schwingt das Modell bei Grosssignal
     "R9": "1 mOhm",          # Platine IST: Drahtbruecke statt 15 Ohm (SOLL laut Bauteilliste: 15 Ohm)
     "f": "27.185 MHz",        # CB Kanal 19 (nur Arbeitspunkt der Simulation)
     "Pin_dBm": "33",          # 2 W Treiberleistung
@@ -67,6 +80,17 @@ DIODE_DEFAULTS = dict(
     Tt="0", Ikf="0", Kf="0", Af="1", Ffe="1", Bv="0", Ibv="1e-3", Temp="26.85", Xti="3", Eg="1.11",
     Tbv="0", Trs="0", Ttt1="0", Ttt2="0", Tm1="0", Tm2="0", Tnom="26.85", Area="1",
 )
+
+
+_PREFIX = {"G": 1e9, "M": 1e6, "k": 1e3, "": 1.0, "m": 1e-3, "u": 1e-6, "n": 1e-9, "p": 1e-12, "f": 1e-15}
+
+
+def to_float(s):
+    """'4.7 kOhm' -> 4700.0 (Einheiten werden ignoriert)."""
+    m = re.fullmatch(r"([-+0-9.eE]+)\s*([GMkmunpf]?)(?:Ohm|F|H|V|W|Hz|A|s)?", str(s).strip().replace("µ", "u"))
+    if not m:
+        raise ValueError(f"Wert nicht lesbar: {s!r}")
+    return float(m.group(1)) * _PREFIX[m.group(2)]
 
 
 def build(mode):
@@ -143,7 +167,11 @@ def build(mode):
     add("L", "L2", ["n_a", "n_b"], L=PARAM["L2"])
     add("R", "R11", ["n_b", "gnd"], R="10 Ohm")
     add("L", "L3", ["n_b", "gnd"], L=PARAM["L3"])
-    bjt("Tr5", "n_b", "n_c", "gnd", "MRF455")
+    if PARAM["Le5"] not in ("0", "0 nH"):
+        bjt("Tr5", "n_b", "n_c", "n_e5", "MRF455")
+        add("L", "Le5", ["n_e5", "gnd"], L=PARAM["Le5"])
+    else:
+        bjt("Tr5", "n_b", "n_c", "gnd", "MRF455")
     add("L", "L4", ["vcc", "n_c"], L=PARAM["L4"])
     add("C", "C18", ["n_c", "gnd"], C="120 pF")
     add("L", "L5", ["n_c", "n_o"], L=PARAM["L5"])
@@ -161,6 +189,15 @@ def build(mode):
         floating = ["pa_in", "pa_out"]                  # PA-Kontakte offen
     for c in comps:
         c["nodes"] = [bridge.get(n, n) for n in c["nodes"]]
+    # Wertvariationen fuer Analysen: PARAM["OV"] = {"R14": "68 Ohm"}, PARAM["SCALE"] = {"C16": 0.97}
+    for c in comps:
+        key = {"R": "R", "C": "C", "L": "L"}.get(c["kind"])
+        if key is None:
+            continue
+        if c["name"] in PARAM["OV"]:
+            c["params"][key] = PARAM["OV"][c["name"]]
+        if c["name"] in PARAM["SCALE"]:
+            c["params"][key] = f"{to_float(c['params'][key]) * PARAM['SCALE'][c['name']]:.6g}"
     for n in floating:
         add("R", "Rleak_" + n, [n, "gnd"], R="1 GOhm")  # nur fuer DC-Konvergenz
     return comps

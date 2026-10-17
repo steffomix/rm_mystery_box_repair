@@ -48,7 +48,8 @@ def netlist(mode, analysis, **kw):
         L.append('Pac:P2 ant gnd Num="2" Z="50 Ohm" P="0 W" f="%s"' % f)
         L.append('.DC:DC1 Temp="26.85" reltol="0.001" abstol="1 pA" vntol="1 uV" saveOPs="no" MaxIter="150"')
         a, b, n = kw.get("sweep", ("1 MHz", "100 MHz", 100))
-        L.append('.SP:SP1 Type="lin" Start="%s" Stop="%s" Points="%d"' % (a, b, n))
+        noise = ' Noise="yes" NoiseIP="2" NoiseOP="1"' if kw.get("noise") else ""
+        L.append('.SP:SP1 Type="lin" Start="%s" Stop="%s" Points="%d"%s' % (a, b, n, noise))
     elif analysis == "dc":
         L.append('Pac:P1 rtx gnd Num="1" Z="50 Ohm" P="0 W" f="%s"' % f)
         L.append('Pac:P2 ant gnd Num="2" Z="50 Ohm" P="0 W" f="%s"' % f)

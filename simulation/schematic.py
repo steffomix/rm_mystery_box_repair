@@ -12,24 +12,13 @@ Rotation r: Basislage wird r-mal mit (x, y) -> (y, -x) gedreht.
 
 import re
 
-from kl200_circuit import BJT_DEFAULTS, DIODE_DEFAULTS, PARAM, build
+from kl200_circuit import BJT_DEFAULTS, DIODE_DEFAULTS, PARAM, build, to_float
 
 STUB = 20
 
 # --------------------------------------------------------------------------
 # Werte -> uSimmics-Schreibweise (ohne Einheiten, SI-Praefix)
 # --------------------------------------------------------------------------
-_PREFIX = {"G": 1e9, "M": 1e6, "k": 1e3, "": 1.0, "m": 1e-3, "u": 1e-6, "n": 1e-9, "p": 1e-12, "f": 1e-15}
-
-
-def to_float(s):
-    s = str(s).strip().replace("µ", "u")
-    m = re.fullmatch(r"([-+0-9.eE]+)\s*([GMkmunpf]?)(?:Ohm|F|H|V|W|Hz|A|s)?", s)
-    if not m:
-        raise ValueError(f"Wert nicht lesbar: {s!r}")
-    return float(m.group(1)) * _PREFIX[m.group(2)]
-
-
 def fmt(s):
     v = to_float(s)
     if v == 0:
@@ -135,7 +124,7 @@ def layout():
     # Zeile 5: PA Eingang und Transistor
     L.update(R9=(100, 900, 0), C15=(280, 900, 0), C16=(440, 900, 3), C17=(560, 900, 3),
              L2=(740, 900, 0), R11=(900, 900, 3), L3=(1020, 900, 3), Tr5=(1180, 900, 0),
-             L4=(1340, 900, 3), C18=(1460, 900, 3))
+             L4=(1340, 900, 3), C18=(1460, 900, 3), Le5=(1580, 900, 3))
     # Zeile 6: PA Ausgang
     L.update(L5=(100, 1100, 0), C19=(280, 1100, 3), C20=(400, 1100, 3), C21=(520, 1100, 3),
              C23=(700, 1100, 0))
