@@ -145,3 +145,9 @@ Auf dem Foto der Platine sitzt D14 unten rechts am Rand. Achte beim Einbau darau
 ## Schaltung
 
 ![Schaltung](images/schaltung_v5.04.png)
+
+## Platine Umbau Bauteile
+![Platine Umbau Bauteile](images/platine-umbau-bauteile.png)
+
+## Platine umgebaut
+![Platine Umgebaut](images/platine-umgebaut.png)

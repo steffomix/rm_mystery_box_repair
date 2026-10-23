@@ -1,9 +1,13 @@
+# vscode settings
+/.vscode
+
+# old RM-Italy docs
 /history
 
 # run results (2+ GB size)
 /analyse/run/
 
-# gperf
+# gperf (https://www.gnu.org/software/gperf/)
 /analyse/gp/
 
 #python
